@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<h3>Profilim</h3>
+<hr>
+{% for article in articles  %}
+<ul>
+  <li>{{article.author}}</li>
+  <li>{{article.email}}</li>
+  <li><a href="/article/{{article.id}}">{{article.title}}</a></li>
+
+
+</ul>
+{% endfor %}
+
+ 
+     
+
+
+
+{% endblock %}
